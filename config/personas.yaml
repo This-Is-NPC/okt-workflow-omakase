@@ -12,19 +12,19 @@
     - postmortem-authoring
     - staged-delivery
     - markdown
-    - okt-config-playbook
-    - okt-help-playbook
-    - okt-note-free-playbook
-    - okt-note-list-playbook
-    - okt-note-recap-playbook
-    - okt-note-show-playbook
-    - okt-pause-playbook
-    - okt-project-continue-playbook
-    - okt-project-resume-playbook
-    - okt-skill-playbook
-    - okt-start-playbook
-    - okt-task-debrief-playbook
-    - okt-task-document-playbook
+    - okt-config
+    - okt-help
+    - okt-note-free
+    - okt-note-list
+    - okt-note-recap
+    - okt-note-show
+    - okt-pause
+    - okt-project-continue
+    - okt-project-resume
+    - okt-skill
+    - okt-start
+    - okt-task-debrief
+    - okt-task-document
   laws: [project-scope-only, no-assumptions, yaml-is-canonical]
 - slug: third-hokage
   schema_version: 2
@@ -41,19 +41,19 @@
     - user-story-writing
     - invest-stories
     - markdown
-    - okt-audit-playbook
-    - okt-plan-claim-playbook
-    - okt-plan-continue-playbook
-    - okt-plan-create-playbook
-    - okt-plan-show-playbook
-    - okt-run-playbook
+    - okt-audit
+    - okt-plan-claim
+    - okt-plan-continue
+    - okt-plan-create
+    - okt-plan-show
+    - okt-run
     - council-deliberation
-    - okt-shape-playbook
-    - okt-task-create-playbook
-    - okt-task-decompose-playbook
-    - okt-task-estimate-playbook
-    - okt-task-prioritize-playbook
-    - okt-task-requirements-playbook
+    - okt-shape
+    - okt-task-create
+    - okt-task-decompose
+    - okt-task-estimate
+    - okt-task-prioritize
+    - okt-task-requirements
   laws: [pdca-aware, smart-success, project-scope-only, feasibility-gate, no-assumptions]
 - slug: konohamaru-class
   schema_version: 2
@@ -62,9 +62,9 @@
     - lean-experimentation
     - five-w-two-h
     - markdown
-    - okt-task-imagine-playbook
-    - okt-task-research-playbook
-    - okt-task-validate-playbook
+    - okt-task-imagine
+    - okt-task-research
+    - okt-task-validate
   laws: [project-scope-only, no-assumptions]
 - slug: naruto-uzumaki
   schema_version: 2
@@ -77,12 +77,12 @@
     - code-smells
     - refactoring-catalog
     - markdown
-    - okt-task-continue-playbook
-    - okt-task-design-playbook
-    - okt-task-implement-playbook
-    - okt-task-refactor-playbook
-    - okt-task-resume-playbook
-    - okt-task-self-review-playbook
+    - okt-task-continue
+    - okt-task-design
+    - okt-task-implement
+    - okt-task-refactor
+    - okt-task-resume
+    - okt-task-self-review
   laws: [project-scope-only, workflow-enforced]
 - slug: sakura-haruno
   schema_version: 2
@@ -92,8 +92,8 @@
     - static-analysis-discipline
     - test-driven-development
     - markdown
-    - okt-task-check-playbook
-    - okt-task-quality-playbook
+    - okt-task-check
+    - okt-task-quality
   laws: [project-scope-only, workflow-enforced]
 - slug: kakashi-hatake
   schema_version: 2
@@ -104,10 +104,10 @@
     - fagan-inspection
     - solid-principles
     - markdown
-    - okt-task-review-playbook
-    - okt-task-secure-playbook
+    - okt-task-review
+    - okt-task-secure
   laws: [project-scope-only]
 - slug: iruka-umino
   schema_version: 2
-  skill_repertoire: [conventional-commits-spec, markdown, okt-task-commit-playbook]
+  skill_repertoire: [conventional-commits-spec, markdown, okt-task-commit]
   laws: [project-scope-only]

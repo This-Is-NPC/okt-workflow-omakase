@@ -8,8 +8,8 @@ skill_repertoire:
   - static-analysis-discipline
   - test-driven-development
   - markdown
-  - okt-task-check-playbook
-  - okt-task-quality-playbook
+  - okt-task-check
+  - okt-task-quality
 laws:
   - project-scope-only
   - workflow-enforced
