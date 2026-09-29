@@ -1,0 +1,163 @@
+global:
+  laws: [template-fidelity, authorize-remote-writes]
+okt:
+  persona: shikamaru-nara
+  skills: [pdca-cycle, okt-start-playbook]
+okt-audit:
+  persona: third-hokage
+  skills: [risk-driven-development, okt-audit-playbook]
+okt-config:
+  persona: shikamaru-nara
+  templates: [config-orientation]
+  skills: [markdown, okt-config-playbook]
+okt-help:
+  persona: shikamaru-nara
+  skills: [markdown, okt-help-playbook]
+okt-note-free:
+  persona: shikamaru-nara
+  templates: [note-free]
+  skills: [note-capture, okt-note-free-playbook]
+okt-note-list:
+  persona: shikamaru-nara
+  skills: [note-capture, okt-note-list-playbook]
+okt-note-recap:
+  persona: shikamaru-nara
+  templates: [note-recap, note-standup-digest]
+  skills: [recap-timeline, standup-digest, okt-note-recap-playbook]
+okt-note-show:
+  persona: shikamaru-nara
+  skills: [note-capture, okt-note-show-playbook]
+okt-pause:
+  persona: shikamaru-nara
+  laws: [project-scope-only, no-praise-pad]
+  templates: [note-handoff]
+  skills: [handoff-synthesis, okt-pause-playbook]
+okt-plan-claim:
+  persona: third-hokage
+  skills: [staged-delivery, okt-plan-claim-playbook]
+okt-plan-continue:
+  persona: third-hokage
+  skills: [staged-delivery, okt-plan-continue-playbook]
+okt-plan-create:
+  persona: third-hokage
+  skills: [staged-delivery, okt-plan-create-playbook]
+okt-plan-show:
+  persona: third-hokage
+  skills: [staged-delivery, okt-plan-show-playbook]
+okt-project-continue:
+  persona: shikamaru-nara
+  skills: [pdca-cycle, okt-project-continue-playbook]
+okt-project-resume:
+  persona: shikamaru-nara
+  skills: [pdca-cycle, okt-project-resume-playbook]
+okt-run:
+  persona: third-hokage
+  skills: [staged-delivery, dora-mindset, okt-run-playbook]
+okt-shape:
+  persona: third-hokage
+  skills: [five-w-two-h, smart-goals, council-deliberation, okt-shape-playbook]
+okt-skill:
+  persona: shikamaru-nara
+  skills: [markdown, okt-skill-playbook]
+okt-start:
+  persona: shikamaru-nara
+  skills: [pdca-cycle, discovery, okt-start-playbook]
+okt-task-check:
+  persona: sakura-haruno
+  laws: [findings-actionable, severity-tagged]
+  templates: [comment-check-report]
+  skills: [regression-detection, coverage-analysis, okt-task-check-playbook]
+okt-task-commit:
+  persona: iruka-umino
+  laws: [conventional-commits, no-coauthored-by, scope-from-paths]
+  skills: [conventional-commits-spec, okt-task-commit-playbook]
+okt-task-continue:
+  persona: naruto-uzumaki
+  skills: [implementation, okt-task-continue-playbook]
+okt-task-create:
+  persona: third-hokage
+  laws: [invest-stories, outcome-over-output]
+  templates: [user-story, task-bugfix, comment-smart-success, comment-moscow]
+  skills: [user-story-writing, invest-stories, smart-goals, okt-task-create-playbook]
+okt-task-debrief:
+  persona: shikamaru-nara
+  laws: [no-praise-pad]
+  skills: [postmortem-authoring, okt-task-debrief-playbook]
+okt-task-decompose:
+  persona: third-hokage
+  skills: [user-story-writing, okt-task-decompose-playbook]
+okt-task-design:
+  persona: naruto-uzumaki
+  skills: [solid-principles, okt-task-design-playbook]
+okt-task-document:
+  persona: shikamaru-nara
+  skills: [documentation, architecture-mapping, okt-task-document-playbook]
+okt-task-estimate:
+  persona: third-hokage
+  skills: [rice-scoring, okt-task-estimate-playbook]
+okt-task-imagine:
+  persona: konohamaru-class
+  laws_disabled: [template-fidelity]
+  templates: [comment-5w2h, comment-smart-success]
+  skills: [discovery, lean-experimentation, okt-task-imagine-playbook]
+okt-task-implement:
+  persona: naruto-uzumaki
+  laws:
+    - bounded-self-review
+    - no-silent-behavior-changes
+    - conventional-commits
+    - self-report
+    - green-main-always
+    - small-batches
+    - boy-scout-rule
+    - test-evidence
+  templates: [pull-request, comment-tests-passing, comment-refactor-drive-by]
+  skills:
+    - implementation
+    - test-driven-development
+    - trunk-based-development
+    - continuous-integration
+    - okt-task-implement-playbook
+okt-task-prioritize:
+  persona: third-hokage
+  templates: [comment-moscow]
+  skills: [moscow-prioritization, rice-scoring, okt-task-prioritize-playbook]
+okt-task-quality:
+  persona: sakura-haruno
+  laws: [findings-actionable, severity-tagged]
+  templates: [comment-review-findings]
+  skills: [static-analysis-discipline, okt-task-quality-playbook]
+okt-task-refactor:
+  persona: naruto-uzumaki
+  laws: [no-silent-behavior-changes, boy-scout-rule]
+  templates: [comment-refactor-opportunities]
+  skills: [refactoring-catalog, okt-task-refactor-playbook]
+okt-task-requirements:
+  persona: third-hokage
+  skills: [requirements-elicitation, non-functional-requirements, okt-task-requirements-playbook]
+okt-task-research:
+  persona: konohamaru-class
+  laws_disabled: [template-fidelity]
+  skills: [discovery, okt-task-research-playbook]
+okt-task-resume:
+  persona: naruto-uzumaki
+  skills: [implementation, okt-task-resume-playbook]
+okt-task-review:
+  persona: kakashi-hatake
+  laws: [findings-actionable, no-praise-pad, severity-tagged]
+  templates: [comment-review-findings, comment-refactor-opportunities]
+  skills: [code-smells, refactoring-catalog, fagan-inspection, okt-task-review-playbook]
+okt-task-secure:
+  persona: kakashi-hatake
+  laws: [findings-actionable, severity-tagged]
+  templates: [comment-review-findings]
+  skills: [security-review-lens, okt-task-secure-playbook]
+okt-task-self-review:
+  persona: naruto-uzumaki
+  laws: [bounded-self-review]
+  templates: [comment-refactor-drive-by]
+  skills: [code-smells, okt-task-self-review-playbook]
+okt-task-validate:
+  persona: konohamaru-class
+  laws_disabled: [template-fidelity]
+  skills: [lean-experimentation, okt-task-validate-playbook]

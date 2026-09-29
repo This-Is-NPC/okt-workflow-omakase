@@ -1,0 +1,90 @@
+- id: 1
+  key: omakase
+  name: Omakase Workflow
+  buckets:
+    - id: 1
+      key: backlog
+      name: Backlog
+      position: 1
+      permissions:
+        task:
+          edit: {allow: true}
+          delete: {allow: true}
+        comment:
+          edit: {allow: true}
+          delete: {allow: true}
+    - id: 2
+      key: dev
+      name: Development
+      position: 2
+      permissions:
+        comment:
+          edit: {allow: true}
+          delete: {allow: true}
+    - id: 3
+      key: review
+      name: Review
+      position: 3
+      permissions:
+        comment:
+          edit: {allow: true}
+    - id: 4
+      key: done
+      name: Done
+      position: 4
+      permissions:
+        task:
+          delete: {allow: false}
+        comment:
+          delete: {allow: false}
+  transitions:
+    - from: 1
+      to: 2
+      guards:
+        - type: comments_tagged
+          count: 1
+          tag: self-branch
+          hint: ${{intl:guard.omakase.dev.comments_tagged.self_branch.hint}}
+        - type: blockers_in
+          buckets: [done]
+          hint: ${{intl:guard.omakase.dev.blockers_in.hint}}
+        - {type: wave_gate, hint: '${{intl:guard.wave_gate.hint}}'}
+    - from: 2
+      to: 3
+      guards:
+        - type: comments_tagged
+          count: 1
+          tag: resume
+          hint: ${{intl:guard.omakase.review.comments_tagged.resume.hint}}
+        - type: comments_tagged
+          count: 1
+          tag: tests-passing
+          hint: ${{intl:guard.omakase.review.comments_tagged.tests_passing.hint}}
+        - {type: subtasks_complete, hint: '${{intl:guard.subtasks_complete.hint}}'}
+    - from: 3
+      to: 4
+      guards:
+        - type: comments_tagged
+          count: 1
+          tag: documentation
+          hint: ${{intl:guard.omakase.done.comments_tagged.documentation.hint}}
+    - {from: 2, to: 1}
+    - {from: 3, to: 1}
+    - {from: 3, to: 2}
+    - {from: 4, to: 3}
+    - {from: 4, to: 2}
+    - {from: 4, to: 1}
+  operations:
+    archive:
+      guards:
+        - type: comments_tagged
+          count: 1
+          tag: documentation
+          hint: ${{intl:guard.common.archive.comments_tagged.documentation.hint}}
+  defaults:
+    task:
+      edit: {allow: false}
+      delete: {allow: false}
+    comment:
+      edit: {allow: false}
+      delete: {allow: false}
